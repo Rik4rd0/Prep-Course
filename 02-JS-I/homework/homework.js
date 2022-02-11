@@ -52,8 +52,8 @@ function resta(x, y) {
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  var multiplicar =x * y ;
-  return multiplicar ;
+  
+  return x*y;
 }
 
 function divide(x, y) {
@@ -76,9 +76,8 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  var str1='hi';
-  var str2='hola';
-  if ( str1 === str2){
+  
+  if ( str1.length == str2.length){
     return true;
   }
   return false;
@@ -116,22 +115,22 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2==1) {
+  if (num % 2===0 ) {
     return true ;
-  }
+  }else{
   return false;
 }
-
+}
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2== 0){
+  if (num % 2=== 1){
     return false;
-  }
+  }else{
   return true;
 }
-
+}
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
@@ -157,15 +156,15 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var red=Math.round(num);
-  return red;
+
+  return red=Math.round(num);;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  var rea=Math.ceil(num);
-  return rea;
+  return  Math.ceil(num);
+  ;
 }
 
 function numeroRandom() {
@@ -183,22 +182,22 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero===0){
+  if(numero > 0){
 
-    return false;
-  }
-else if(numero > 0){
-  alert('Es positivo');
-  
-}else{
-alert('Es negativo');
+    return 'Es positivo';
+  }else if(numero > 0){
+   return 'Es negativo';
+}else { 
+  return false;
 }
 }
+
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  return str.concat('!');
 
 }
 
