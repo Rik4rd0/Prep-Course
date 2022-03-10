@@ -1,5 +1,5 @@
 
-.divClass >h1{
+#divClass >h1{
     color: aqua;
  }
  #thirdDiv >ul>li>img{
@@ -16,5 +16,9 @@
       font-size: 18px;
       margin: 50px; 
      }
+<<<<<<< HEAD
      
     
+=======
+    
+>>>>>>> 4ed0cd2a03b32927fa72845ce94e84afc6ad05d7
